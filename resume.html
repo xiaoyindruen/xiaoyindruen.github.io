@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" >
+    </head>
+<body>
+    <div id="nav-placeholder"></div>
+    <p>This is a placeholder for some great content (resume)</p>
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/jquery.min.js"></script>
+<script>
+    $.get("/html/navbar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
+</body>
+</html>
