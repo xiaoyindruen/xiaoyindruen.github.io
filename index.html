@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+    </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="nav-placeholder"></div>
+<p>Welcome to my GitHub Pages.</p>
 <p> This shows this is a custom update that I made</p>
-<img src="./images/test.png" />
+<img src="./images/Mumianshu.heic" />
 <a href="https://github.com/xiaoyindruen/portfolio/tree/main/CIS%20200">My C# Portfolio</a>
 <a href="https://github.com/xiaoyindruen/portfolio/tree/main/CIS%20200/Assignments%20CIS199">CIS 199 Assignments</a>
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+    $.get("html/navbar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
 </body>
 </html>
